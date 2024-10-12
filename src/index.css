@@ -1,0 +1,20 @@
+:root {
+  --clr-dark: #070a13;
+  --clr-light: #f1f5f9;
+}
+
+* {
+  margin: 0;
+  line-height: calc(1em + 0.5rem);
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Noto Sans", sans-serif;
+  background-color: var(--clr-dark);
+  color: var(--clr-light);
+  margin-left: 10px;
+  margin-right: 10px;
+}
