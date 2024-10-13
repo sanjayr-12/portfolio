@@ -1,27 +1,37 @@
 import { useState } from "react";
 import projects from "./projects";
+import "./projects.css";
 
 const Projects = () => {
-  const [desShow, setDesShow] = useState(false);
+  const [desId, setDesId] = useState(null);
   const [description, setDescription] = useState("");
+  const [desShow, setDesShow] = useState(false);
 
   const handleClick = (id) => {
     setDescription(projects[id - 1].description);
-    setDesShow(id);
+    setDesId(id);
+    if (id === desId) {
+      setDesShow(!desShow);
+    }
   };
   return (
     <div>
       <h2>Projects</h2>
-      <span>|</span>
-
-      {projects.map((project) => {
-        return (
-          <div key={project.id}>
-            <p onClick={() => handleClick(project.id)}>{project.name}</p>
-            {desShow === project.id && <p>{description}</p>}
-          </div>
-        );
-      })}
+      <div className="projects-main-container">
+        {projects.map((project) => {
+          return (
+            <div
+              key={project.id}
+              className="project-child"
+              onClick={() => handleClick(project.id)}
+            >
+              <h3>{project.name}</h3>
+              {desShow && desId === project.id && <p className="project-description">{description}</p>}
+              {console.log(desShow)}
+            </div>
+          );
+        })}
+      </div>
     </div>
   );
 };

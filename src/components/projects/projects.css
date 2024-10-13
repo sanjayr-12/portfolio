@@ -1,0 +1,33 @@
+.projects-main-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.project-child {
+  margin: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+  width: 200px;
+  transition: transform 0.2s;
+  cursor: pointer;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+.project-child:hover {
+  transform: scale(1.05);
+}
+
+.project-description {
+  margin-top: 10px;
+}
+
+@media (min-width: 768px) {
+    .project-child{
+        width: 250px;
+    }
+}

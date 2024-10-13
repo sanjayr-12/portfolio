@@ -3,7 +3,7 @@ const projects = [
         id:1,
         name: "Twitter Clone",
         description: "This projects is a twitter clone, but the difference is it has strict moderation",
-        link:"some.git"
+        link:""
     },
     {
         id:2,
