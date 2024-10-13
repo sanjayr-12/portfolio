@@ -1,0 +1,32 @@
+.blog-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+.blog-post {
+    margin: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    width: 300px; 
+    transition: transform 0.2s;
+    cursor: pointer;
+}
+
+.blog-post img {
+    width: 100%; 
+    height: auto; 
+}
+
+.blog-post p {
+    padding: 10px;
+    font-size: 1.2em;
+    text-align: center;
+}
+
+.blog-post:hover {
+    transform: scale(1.05); 
+}
+
