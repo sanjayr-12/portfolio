@@ -15,6 +15,13 @@
     cursor: pointer;
 }
 
+.loading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+
 .blog-post img {
     width: 100%; 
     height: auto; 

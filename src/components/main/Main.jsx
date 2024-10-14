@@ -1,4 +1,4 @@
-import Projects from "../projects/Projects";
+import { Projects } from "../projects/Projects";
 import "./main.css";
 
 const Main = () => {
@@ -36,7 +36,7 @@ const Main = () => {
           of tech.
         </p>
       </div>
-      <h2 style={{ marginTop: "30px", "padding":0 }}>Skills </h2>
+      <h2 style={{ marginTop: "30px", padding: 0 }}>Skills </h2>
       <span className="arrow">↓</span>
       <h3>Programming Languages</h3>
       <div className="article-program">
@@ -57,8 +57,8 @@ const Main = () => {
             </div>
           );
         })}
-          </div>
-          <Projects/>
+      </div>
+      <Projects />
     </div>
   );
 };

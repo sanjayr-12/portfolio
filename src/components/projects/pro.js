@@ -1,4 +1,4 @@
-const projects = [
+export const pro = [
     {
         id:1,
         name: "Twitter Clone",
@@ -16,5 +16,3 @@ const projects = [
         description:"This project aims to manage the essential workers, assign works to them"
     }
 ]
-
-export default projects
