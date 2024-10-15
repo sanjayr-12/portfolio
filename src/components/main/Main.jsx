@@ -1,3 +1,4 @@
+import Profiles from "../profiles/Profiles";
 import { Projects } from "../projects/Projects";
 import "./main.css";
 
@@ -59,6 +60,7 @@ const Main = () => {
         })}
       </div>
       <Projects />
+      <Profiles/>
     </div>
   );
 };

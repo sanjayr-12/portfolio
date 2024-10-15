@@ -12,7 +12,9 @@ const Blog = () => {
   useEffect(() => {
     const getAll = async () => {
       try {
-        const response = await axios.get("http://localhost:8080/api/post");
+        const response = await axios.get(
+          "https://blog-e43j.onrender.com/api/post"
+        );
         setPosts(response.data);
         console.log(response.data);
       } catch (error) {

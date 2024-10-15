@@ -18,7 +18,7 @@ const Article = () => {
       async function fetchPost() {
         try {
           const response = await axios.get(
-            "http://localhost:8080/api/post/" + slug
+            "https://blog-e43j.onrender.com/api/post/" + slug
           );
           setArticle(response.data[0]);
           console.log(response.data);
