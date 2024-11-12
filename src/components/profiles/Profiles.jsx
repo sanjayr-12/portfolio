@@ -6,6 +6,7 @@ const Profiles = () => {
       <div className="blog-profile-child">
         <p>Medium</p>
         <p>Dev</p>
+        <p>Freecodecamp</p>
       </div>
     </div>
   );

@@ -1,3 +1,4 @@
+import Footer from "../footer/Footer";
 import Profiles from "../profiles/Profiles";
 import { Projects } from "../projects/Projects";
 import "./main.css";
@@ -60,7 +61,8 @@ const Main = () => {
         })}
       </div>
       <Projects />
-      <Profiles/>
+      <Profiles />
+      <Footer/>
     </div>
   );
 };

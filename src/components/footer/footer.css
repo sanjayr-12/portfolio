@@ -1,0 +1,20 @@
+.main-footer{
+    margin-bottom: 40px;
+    margin-top: 40px;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+.footer-parent{
+    width: 100%;
+}
+
+.footer-parent span{
+    width: 100%;
+    background-color: aliceblue;
+    height: 23px;
+}
+

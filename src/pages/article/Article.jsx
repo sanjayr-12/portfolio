@@ -12,7 +12,6 @@ const Article = () => {
   const { slug } = useParams();
   const [article, setArticle] = useState(location.state?.post || null);
   //   const [loading, setLoading] = useState(true);
-
   useEffect(() => {
     if (!article) {
       async function fetchPost() {
