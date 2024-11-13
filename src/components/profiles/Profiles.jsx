@@ -1,7 +1,7 @@
 import "./profile.css"
 const Profiles = () => {
   return (
-    <div>
+    <div className="blog-parent">
       <h2>Blog Profiles</h2>
       <div className="blog-profile-child">
         <p>Medium</p>

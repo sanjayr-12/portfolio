@@ -10,6 +10,7 @@
 
 .footer-parent{
     width: 100%;
+    margin-bottom: 100px;
 }
 
 .footer-parent span{
@@ -18,3 +19,12 @@
     height: 23px;
 }
 
+.contact-main{
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+.contact-main li{
+    margin-bottom: 15px;
+}

@@ -7,10 +7,21 @@ const Footer = () => {
       <span></span>
       <div className="main-footer">
         <div>
-          <h4>Social-Profiles</h4>
+          <h3>Contact</h3>
+        </div>
+      </div>
+      <div className="contact-main">
+        <div>
+          <ul>
+            <li>Instagram</li>
+            <li>Linkedin</li>
+          </ul>
         </div>
         <div>
-          <h4>Contact</h4>
+          <ul>
+            <li>Mail</li>
+            <li>Num</li>
+          </ul>
         </div>
       </div>
     </div>
