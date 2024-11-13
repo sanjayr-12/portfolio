@@ -1,13 +1,13 @@
 import { Route, Routes } from "react-router-dom";
 import Main from "../components/main/Main";
-import Navbar from "../components/navbar/navbar";
+import Navbar from "../components/navbar/Navbar"
 import Blog from "./blog/Blog";
 import Article from "./article/Article";
 
 const Home = () => {
   return (
     <div>
-      <Navbar />
+      <Navbar/>
       <Routes>
         <Route path="/" element={<Main />} />
         <Route path="/blog" element={<Blog />} />
