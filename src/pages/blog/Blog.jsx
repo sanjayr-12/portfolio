@@ -13,9 +13,8 @@ const Blog = () => {
     const getAll = async () => {
       try {
         const response = await axios.get(
-          import.meta.env.VITE_API_URL+"/api/post"
+          "https://blog-e43j.onrender.com/api/post"
         );
-        
         setPosts(response.data);
         console.log(response.data);
       } catch (error) {
