@@ -8,8 +8,8 @@
 
 .project-child {
   margin: 15px;
-  border: 1px solid #ccc;
-  border-radius: 8px;
+  /* border: 1px solid #ccc;
+  border-radius: 8px; */
   overflow: hidden;
   width: 200px;
   transition: transform 0.2s;

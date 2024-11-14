@@ -8,13 +8,19 @@ export const Projects = () => {
   const [desShow, setDesShow] = useState(false);
 
   const handleClick = (id) => {
-    setDescription(projects[id - 1].description);
-    setDesId(id);
-    setDesShow(!desShow);
+    if (desId === id) {
+      setDesShow(!desShow);
+    } else {
+      setDescription(projects[id - 1].description);
+      setDesId(id);
+      setDesShow(true);
+    }
   };
   return (
     <div>
-      <h2>Projects</h2>
+      <h2 style={{ marginTop: "30px", padding: 0 }}>Projects</h2>
+      <br />
+      <span className="arrow">↓</span>
       <div className="projects-main-container">
         {projects.map((project) => {
           return (
@@ -23,8 +29,8 @@ export const Projects = () => {
               className="project-child"
               onClick={() => handleClick(project.id)}
             >
-                  <h3>{project.name}</h3>
-                  <span className="line"></span>
+              <h3>{project.name}</h3>
+              <span className="line"></span>
               {desShow && desId === project.id && (
                 <p className="project-description">{description}</p>
               )}
